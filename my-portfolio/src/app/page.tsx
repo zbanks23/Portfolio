@@ -1,12 +1,18 @@
 import Image from "next/image";
 import React from "react";
+import {
+  House,
+  BrainCog,
+  BriefcaseBusiness,
+  FolderGit2Icon,
+} from "lucide-react";
 
 // You can replace these with actual components or more detailed placeholders
 const ProfileCard: React.FC = () => (
   <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg h-full">
     <div className="flex flex-col items-center">
       {/* Placeholder for an avatar */}
-      <div className="w-32 h-32 bg-gray-300 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center">
+      <div className="w-64 h-64 bg-gray-300 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="64"
@@ -32,7 +38,6 @@ const ProfileCard: React.FC = () => (
       <div className="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300">
         <p>Location: City, Country</p>
         <p>Email: your.email@example.com</p>
-        <p>Website: yourwebsite.com</p>
       </div>
       {/* Social Media Icons Placeholder */}
       <div className="flex space-x-3 mt-6">
@@ -99,32 +104,13 @@ const ProfileCard: React.FC = () => (
 
 const RightNavbar: React.FC = () => (
   <nav className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg h-full">
-    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-      Navigation
-    </h3>
-    <ul className="space-y-3">
+    <ul className="space-y-6 max-w-max mx-auto">
       <li>
         <a
           href="#home"
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
-          Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="#about"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          About
-        </a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          Projects
+          <House />
         </a>
       </li>
       <li>
@@ -132,7 +118,7 @@ const RightNavbar: React.FC = () => (
           href="#skills"
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
-          Skills
+          <BrainCog />
         </a>
       </li>
       <li>
@@ -140,24 +126,18 @@ const RightNavbar: React.FC = () => (
           href="#experience"
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
-          Experience
+          <BriefcaseBusiness />
         </a>
       </li>
       <li>
         <a
-          href="#contact"
+          href="#projects"
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
-          Contact
+          <FolderGit2Icon />
         </a>
       </li>
     </ul>
-    {/* Add a theme toggle or other nav items here */}
-    <div className="mt-8 pt-4 border-t border-gray-300 dark:border-gray-700">
-      <p className="text-xs text-gray-500 dark:text-gray-400">
-        © {new Date().getFullYear()} Your Name
-      </p>
-    </div>
   </nav>
 );
 
@@ -176,59 +156,17 @@ const MainContent: React.FC = () => (
         About Me
       </h2>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        <p>Hi, I'm Zhicheng Li An innovator</p>
-        <p>
-          I'm an aspiring Software Engineer, and Machine Learning Engineer. As a
-          3rd-year Computer Science student at the University of Florida, I
-          thrive on creating good solutions and solving challenging real world
-          problems. My experise spans multiple programming languages, NextJS,
-          and multiple python libraries, allowing me to build effective and
-          innovative solutions. Always eager to learn and grow, I believe in
-          never ending education.
-        </p>
+        Hi, I'm Zhicheng Li An innovator
       </p>
-    </section>
-
-    {/* Projects Section Placeholder */}
-    <section id="projects" className="mb-12">
-      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
-        Projects
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Project Card 1 */}
-        <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow">
-          <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-            Project Title 1
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mt-2">
-            Short description of the project. Highlight key technologies and
-            your role.
-          </p>
-          <a
-            href="#"
-            className="text-blue-600 dark:text-blue-400 hover:underline mt-3 inline-block"
-          >
-            View Project
-          </a>
-        </div>
-        {/* Project Card 2 */}
-        <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow">
-          <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-            Project Title 2
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mt-2">
-            Another project description. Focus on impact and challenges
-            overcome.
-          </p>
-          <a
-            href="#"
-            className="text-blue-600 dark:text-blue-400 hover:underline mt-3 inline-block"
-          >
-            View Project
-          </a>
-        </div>
-        {/* Add more project cards */}
-      </div>
+      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        I'm an aspiring Software Engineer, and Machine Learning Engineer. As a
+        3rd-year Computer Science student at the University of Florida, I thrive
+        on creating good solutions and solving challenging real world problems.
+        My experise spans multiple programming languages, NextJS, and multiple
+        python libraries, allowing me to build effective and innovative
+        solutions. Always eager to learn and grow, I believe in never ending
+        education.
+      </p>
     </section>
 
     {/* Skills Section Placeholder */}
@@ -298,6 +236,48 @@ const MainContent: React.FC = () => (
             <li>Participated in code reviews and testing.</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    {/* Projects Section Placeholder */}
+    <section id="projects" className="mb-12">
+      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+        Projects
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Project Card 1 */}
+        <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow">
+          <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+            Project Title 1
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 mt-2">
+            Short description of the project. Highlight key technologies and
+            your role.
+          </p>
+          <a
+            href="#"
+            className="text-blue-600 dark:text-blue-400 hover:underline mt-3 inline-block"
+          >
+            View Project
+          </a>
+        </div>
+        {/* Project Card 2 */}
+        <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow">
+          <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+            Project Title 2
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 mt-2">
+            Another project description. Focus on impact and challenges
+            overcome.
+          </p>
+          <a
+            href="#"
+            className="text-blue-600 dark:text-blue-400 hover:underline mt-3 inline-block"
+          >
+            View Project
+          </a>
+        </div>
+        {/* Add more project cards */}
       </div>
     </section>
 
@@ -373,6 +353,13 @@ const MainContent: React.FC = () => (
         Still scrolling...
       </p>
     </div>
+
+    {/* Add a theme toggle or other nav items here */}
+    <div className="mt-8 pt-4 border-t border-gray-300 dark:border-gray-700">
+      <p className="text-xs text-gray-500 dark:text-gray-400">
+        © {new Date().getFullYear()} Your Name
+      </p>
+    </div>
   </div>
 );
 
@@ -410,7 +397,7 @@ const PortfolioPage: React.FC = () => {
       {/* `w-full md:w-56 lg:w-64 xl:w-72` sets responsive widths */}
       {/* `sticky top-4 md:top-6 lg:top-8` makes it sticky */}
       {/* `self-start` aligns it to the top of the flex container */}
-      <aside className="w-full md:w-56 lg:w-64 xl:w-72 sticky top-4 md:top-6 lg:top-8 self-start">
+      <aside className="w-full md:w-20 lg:w-20 xl:w-20 sticky top-30 md:top-50 lg:top-70 self-start">
         {/* The RightNavbar component is placed here */}
         <RightNavbar />
       </aside>
