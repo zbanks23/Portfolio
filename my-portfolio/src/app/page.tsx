@@ -1,145 +1,6 @@
-import Image from "next/image";
 import React from "react";
-import {
-  House,
-  BrainCog,
-  BriefcaseBusiness,
-  FolderGit2Icon,
-} from "lucide-react";
-
-// You can replace these with actual components or more detailed placeholders
-const ProfileCard: React.FC = () => (
-  <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg h-full">
-    <div className="flex flex-col items-center">
-      {/* Placeholder for an avatar */}
-      <div className="w-64 h-64 bg-gray-300 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="64"
-          height="64"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="text-gray-500 dark:text-gray-400"
-        >
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </svg>
-      </div>
-      <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
-        Your Name
-      </h2>
-      <p className="text-gray-600 dark:text-gray-400 text-sm">
-        Your Title / Profession
-      </p>
-      <div className="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300">
-        <p>Location: City, Country</p>
-        <p>Email: your.email@example.com</p>
-      </div>
-      {/* Social Media Icons Placeholder */}
-      <div className="flex space-x-3 mt-6">
-        <a
-          href="#"
-          className="text-gray-500 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-          </svg>
-        </a>
-        <a
-          href="#"
-          className="text-gray-500 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-          </svg>
-        </a>
-        <a
-          href="#"
-          className="text-gray-500 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-);
-
-const RightNavbar: React.FC = () => (
-  <nav className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg h-full">
-    <ul className="space-y-6 max-w-max mx-auto">
-      <li>
-        <a
-          href="#home"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          <House />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#skills"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          <BrainCog />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#experience"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          <BriefcaseBusiness />
-        </a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          <FolderGit2Icon />
-        </a>
-      </li>
-    </ul>
-  </nav>
-);
+import ProfileCard from "@/components/ProfileCard";
+import NavBar from "@/components/NavBar";
 
 const MainContent: React.FC = () => (
   <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
@@ -377,8 +238,7 @@ const PortfolioPage: React.FC = () => {
           However, for a profile card, allowing its natural height or a max-height might be better.
           Here, `self-start` ensures it doesn't stretch if the main content is taller.
       */}
-      <aside className="w-full md:w-64 lg:w-80 xl:w-96 sticky top-4 md:top-6 lg:top-8 self-start">
-        {/* The ProfileCard component is placed here */}
+      <aside className="w-full h-full md:w-63 md:h-90 lg:w-70 lg:h-98 xl:w-80 xl:h-112 sticky top-4 md:top-6 lg:top-8">
         <ProfileCard />
       </aside>
 
@@ -389,7 +249,6 @@ const PortfolioPage: React.FC = () => {
           The main page scroll will handle the content overflow.
       */}
       <main className="flex-grow w-full md:flex-1 order-first md:order-none">
-        {/* The MainContent component is placed here */}
         <MainContent />
       </main>
 
@@ -398,8 +257,7 @@ const PortfolioPage: React.FC = () => {
       {/* `sticky top-4 md:top-6 lg:top-8` makes it sticky */}
       {/* `self-start` aligns it to the top of the flex container */}
       <aside className="w-full md:w-20 lg:w-20 xl:w-20 sticky top-30 md:top-50 lg:top-70 self-start">
-        {/* The RightNavbar component is placed here */}
-        <RightNavbar />
+        <NavBar />
       </aside>
     </div>
   );
