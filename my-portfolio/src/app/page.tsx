@@ -238,7 +238,7 @@ const PortfolioPage: React.FC = () => {
           However, for a profile card, allowing its natural height or a max-height might be better.
           Here, `self-start` ensures it doesn't stretch if the main content is taller.
       */}
-      <aside className="w-full h-full md:w-63 md:h-90 lg:w-70 lg:h-98 xl:w-80 xl:h-112 sticky top-4 md:top-6 lg:top-8">
+      <aside className="w-full h-full md:w-63 md:h-90 lg:w-70 lg:h-98 xl:w-80 xl:h-112 md:sticky top-4 md:top-6 lg:top-8 order-first">
         <ProfileCard />
       </aside>
 
@@ -248,7 +248,7 @@ const PortfolioPage: React.FC = () => {
       {/* `overflow-y-auto` is not strictly needed here if the page itself scrolls, but good if this section itself needs to scroll independently.
           The main page scroll will handle the content overflow.
       */}
-      <main className="flex-grow w-full md:flex-1 order-first md:order-none">
+      <main className="flex-grow w-full md:flex-1 md:order-none">
         <MainContent />
       </main>
 
