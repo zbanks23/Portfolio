@@ -238,7 +238,7 @@ const PortfolioPage: React.FC = () => {
           However, for a profile card, allowing its natural height or a max-height might be better.
           Here, `self-start` ensures it doesn't stretch if the main content is taller.
       */}
-      <aside className="w-full h-full md:w-63 md:h-90 lg:w-70 lg:h-98 xl:w-80 xl:h-112 md:sticky top-4 md:top-6 lg:top-8 order-first">
+      <aside className="w-full h-full md:w-63 md:h-98 lg:w-72 lg:h-112 md:sticky top-16 md:top-32 lg:top-40 order-first">
         <ProfileCard />
       </aside>
 

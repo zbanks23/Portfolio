@@ -2,36 +2,35 @@ import React from "react";
 
 const ProfileCard: React.FC = () => {
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg h-full">
+    <div className="bg-gray-100 dark:bg-gray-800 p-2 sm:p-4 md:p-8 rounded-lg shadow-lg">
       <div className="flex flex-col items-center">
         {/* Placeholder for an avatar */}
-        <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-gray-300 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center">
+        <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gray-300 dark:bg-gray-700 rounded-full mb-4 flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="64"
-            height="64"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-gray-500 dark:text-gray-400"
+            className="w-1/2 h-1/2 text-gray-500 dark:text-gray-400"
           >
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
         </div>
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 dark:text-white text-center">
           Your Name
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 text-sm">
+        <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base text-center">
           Your Title / Profession
         </p>
-        <div className="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+        <div className="mt-4 space-y-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center">
           <p>Location: City, Country</p>
           <p>Email: your.email@example.com</p>
         </div>
+
         {/* Social Media Icons Placeholder */}
         <div className="flex space-x-3 mt-6">
           <a
