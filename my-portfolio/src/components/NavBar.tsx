@@ -2,7 +2,6 @@
 import React from "react";
 import {
   House,
-  User, // Added for About section
   BrainCog,
   BriefcaseBusiness,
   FolderGit2Icon,
@@ -21,7 +20,6 @@ const navItemsConfig: {
   [key: string]: { icon: React.JSX.Element; name: string };
 } = {
   home: { icon: <House size={24} />, name: "Home" },
-  about: { icon: <User size={24} />, name: "About Me" }, // Added About
   skills: { icon: <BrainCog size={24} />, name: "Skills" },
   experience: { icon: <BriefcaseBusiness size={24} />, name: "Experience" },
   projects: { icon: <FolderGit2Icon size={24} />, name: "Projects" },

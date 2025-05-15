@@ -5,29 +5,18 @@ import ProfileCard from "@/components/ProfileCard";
 import NavBar from "@/components/NavBar";
 import MainContent from "@/components/MainContent";
 
-const SECTION_IDS = [
-  "home",
-  "about",
-  "skills",
-  "experience",
-  "projects",
-  "contact",
-];
+const SECTION_IDS = ["home", "skills", "experience", "projects", "contact"];
 
 const PortfolioPage: React.FC = () => {
   const [activeSectionIndex, setActiveSectionIndex] = useState(0);
   const [isWheeling, setIsWheeling] = useState(false); // Prevents rapid scroll triggers
 
-  // Ref for the main content area to attach wheel listener if desired,
-  // though window listener is often simpler for this full-page effect.
-  // const mainContentScrollRef = useRef<HTMLDivElement>(null);
-
   const lastWheelTime = useRef(0);
   const scrollAccumulator = useRef(0);
 
-  const SCROLL_INTENT_THRESHOLD = 50; // Pixels: How much deltaY before we consider it an intent. Adjust as needed.
-  const SCROLL_COOLDOWN = 800; // Milliseconds: Cooldown between scroll navigations (should be > transition duration).
-  const CSS_TRANSITION_DURATION = 700; // Milliseconds: Match this with your CSS.
+  const SCROLL_INTENT_THRESHOLD = 50;
+  const SCROLL_COOLDOWN = 800; // ms: Cooldown between scroll navigations (should be > transition duration).
+  const CSS_TRANSITION_DURATION = 700; // ms: Match this with your CSS.
 
   const navigateToSection = useCallback((index: number) => {
     if (index >= 0 && index < SECTION_IDS.length) {

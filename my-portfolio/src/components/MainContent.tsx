@@ -9,22 +9,9 @@ interface MainContentProps {
 // Your original sections, but ensure each <section> is styled for full viewport height
 const InnerContent: React.FC = () => (
   <>
-    {/* Home Section (Welcome) */}
+    {/* Home Section */}
     <section
       id="home"
-      className="h-screen w-full flex flex-col justify-center items-center p-8 bg-white dark:bg-gray-900" // Added h-screen
-    >
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-        Welcome to My Portfolio
-      </h1>
-      <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
-        Scroll or use navigation to explore.
-      </p>
-    </section>
-
-    {/* About Section */}
-    <section
-      id="about"
       className="h-screen w-full flex flex-col justify-center items-center p-8 bg-gray-50 dark:bg-gray-800" // Added h-screen, changed bg for visual distinction
     >
       <div className="max-w-3xl w-full">
@@ -95,7 +82,7 @@ const InnerContent: React.FC = () => (
         <div className="border-l-2 border-blue-500 dark:border-blue-400 pl-6 space-y-10 relative">
           {/* Experience Item 1 */}
           <div className="relative">
-            <div className="absolute -left-[35px] top-1 w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full border-2 border-white dark:border-gray-900"></div>
+            <div className="absolute -left-[33px] top-1 w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full border-2 border-white dark:border-gray-900"></div>
             <h3 className="text-xl font-medium text-gray-900 dark:text-white">
               Software Engineer
             </h3>
@@ -118,7 +105,7 @@ const InnerContent: React.FC = () => (
           </div>
           {/* Experience Item 2 */}
           <div className="relative">
-            <div className="absolute -left-[35px] top-1 w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full border-2 border-white dark:border-gray-900"></div>
+            <div className="absolute -left-[33px] top-1 w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full border-2 border-white dark:border-gray-900"></div>
             <h3 className="text-xl font-medium text-gray-900 dark:text-white">
               Junior Developer
             </h3>
