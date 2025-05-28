@@ -85,17 +85,9 @@ const InnerContent: React.FC = () => (
             </h3>
             <p className="text-gray-400">GatorTech | April 2025 - Present</p>
             <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
-              <li>
-                Developed and maintained web applications using React and
-                Node.js.
-              </li>
-              <li>
-                Collaborated with cross-functional teams to deliver high-quality
-                software.
-              </li>
-              <li>
-                Contributed to the design and architecture of new features.
-              </li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
           {/* Experience Item 2 */}
@@ -107,8 +99,18 @@ const InnerContent: React.FC = () => (
               2025
             </p>
             <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
-              <li>Assisted in the development of client websites.</li>
-              <li>Participated in code reviews and testing.</li>
+              <li>
+                Collaborated with board members to coordinate the Mentor Mentee
+                Event that resulted in over 80 participants
+              </li>
+              <li>
+                Spearheaded the storyline development for the Mentor Mentee
+                event that resulted in overwhelming satisfaction
+              </li>
+              <li>
+                Organized a cultural event that raised awareness of Asian
+                cultures using fun culture specific mini-games
+              </li>
             </ul>
           </div>
         </div>
@@ -127,7 +129,9 @@ const InnerContent: React.FC = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full mr-28 2xl:ml-0 2xl:mr-0">
           {/* Project Card 1 */}
           <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-medium text-white">Project Title 1</h3>
+            <h3 className="text-xl font-medium text-white">
+              Personal Portfolio
+            </h3>
             <p className="text-gray-400 mt-2">
               Short description of the project. Highlight key technologies and
               your role.
@@ -141,11 +145,123 @@ const InnerContent: React.FC = () => (
           </div>
           {/* Project Card 2 */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-medium text-white">Project Title 2</h3>
-            <p className="text-gray-400 mt-2">
-              Another project description. Focus on impact and challenges
-              overcome.
-            </p>
+            <h3 className="text-xl font-medium text-white">
+              Iris Flower Classification
+            </h3>
+            <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
+              <li>
+                Utilized Pandas, matplotlib, and Seaborn to visualize the
+                relationship between Iris Petal length and width
+              </li>
+              <li>
+                Utilized the K-Nearest Neighbor Algorithm to predict the Iris
+                flower species with 100 percent accuracy
+              </li>
+              <li>
+                Utilized Linear Regression to achieve 100 percent Iris flower
+                species prediction rate
+              </li>
+              <li>
+                Predicted Iris flower species with 100% accuracy utilizing SVM
+                with Linear, RBF, and Polynomial Kernel
+              </li>
+            </ul>
+            <a
+              href="#"
+              className="text-blue-400 hover:underline mt-4 inline-block"
+            >
+              View Project
+            </a>
+          </div>
+          {/* Project Card 3 */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-medium text-white">
+              Stock Price Analysis
+            </h3>
+            <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
+              <li>
+                Analyzed trends in Google (GOOGL) Stock price by comparing the
+                daily volume with daily price changes
+              </li>
+              <li>
+                Utilized Pandas to manipulate and clean raw data downloaded from
+                Kaggle for data analysis
+              </li>
+              <li>
+                Utilized Matplotlib and Seaborn to create insightful data
+                visualizations
+              </li>
+            </ul>
+            <a
+              href="#"
+              className="text-blue-400 hover:underline mt-4 inline-block"
+            >
+              View Project
+            </a>
+          </div>
+          {/* Project Card 4 */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-medium text-white">Schedulify</h3>
+            <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
+              <li>
+                Developed a web baed schedule generator with the UF courses API
+                using user inputs
+              </li>
+              <li>
+                Leveraged two different algorithms: Greedy and Backtracking, to
+                generate and compare different schedules
+              </li>
+              <li>
+                Created a visually appeasing user interface with HTML and CSS
+              </li>
+            </ul>
+            <a
+              href="#"
+              className="text-blue-400 hover:underline mt-4 inline-block"
+            >
+              View Project
+            </a>
+          </div>
+          {/* Project Card 5 */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-medium text-white">MineSweeper</h3>
+            <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
+              <li>
+                Developed a modern implementation of the classic game of
+                Minesweeper using C++
+              </li>
+              <li>
+                Implemented a visually appealing interface for MineSweeper using
+                the SFML library
+              </li>
+              <li>
+                Incorporated a timer function to track game duration and a
+                leaderboard system to rank the top 5 fastest times
+              </li>
+            </ul>
+            <a
+              href="#"
+              className="text-blue-400 hover:underline mt-4 inline-block"
+            >
+              View Project
+            </a>
+          </div>
+          {/* Project Card 6 */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-medium text-white">Sudoku</h3>
+            <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
+              <li>
+                Spearheaded the coding development of the classic game of Sudoku
+                using Python in a team of 4 students
+              </li>
+              <li>
+                Effectively utilized Git to communicate updates and changes to
+                my teammates
+              </li>
+              <li>
+                Implemented the visuals for Sudoku using the Pygame library
+              </li>
+            </ul>
             <a
               href="#"
               className="text-blue-400 hover:underline mt-4 inline-block"
