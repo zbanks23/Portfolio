@@ -33,41 +33,6 @@ const InnerContent: React.FC = () => (
       </div>
     </section>
 
-    {/* Skills Section */}
-    <section
-      id="skills"
-      className="h-screen w-full flex flex-col justify-center items-center p-8 bg-gray-900"
-    >
-      <div className="max-w-3xl w-full">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-100 mb-8 text-center">
-          Skills
-        </h2>
-        <div className="flex flex-wrap gap-3 justify-center">
-          {[
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Next.js",
-            "Tailwind CSS",
-            "Node.js",
-            "HTML5",
-            "CSS3",
-            "Git",
-            "Python",
-            "Java",
-            "C++",
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="bg-blue-900 text-blue-300 px-4 py-2 rounded-full text-base font-medium"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </div>
-    </section>
-
     {/* Experience Section */}
     <section
       id="experience"
@@ -117,19 +82,52 @@ const InnerContent: React.FC = () => (
         </div>
       </div>
     </section>
-    <Projects />
+
+    {/* Skills Section */}
+    <section
+      id="skills"
+      className="h-screen w-full flex flex-col justify-center items-center p-8 bg-gray-900"
+    >
+      <div className="max-w-3xl w-full">
+        <h2 className="text-3xl md:text-4xl font-semibold text-gray-100 mb-8 text-center">
+          Skills
+        </h2>
+        <div className="flex flex-wrap gap-3 justify-center">
+          {[
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "HTML5",
+            "CSS3",
+            "Git",
+            "Python",
+            "C++",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="bg-blue-900 text-blue-300 px-4 py-2 rounded-full text-base font-medium"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Projects Section */}
     <section
       id="projects"
       className="h-screen w-full flex flex-col justify-center items-center p-8 bg-gray-900"
     >
-      <div className="max-w-4xl w-full">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-100 mb-8 text-center">
-          Projects
-        </h2>
+      <h2 className="text-3xl md:text-4xl font-semibold dark:text-gray-100 mb-8 text-center md:text-left">
+        Projects
+      </h2>
+      <div className="grid grid-cols-3 gap-4 m-4">
+        <Projects />
       </div>
     </section>
-
     {/* Contact Section */}
     <section
       id="contact"

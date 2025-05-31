@@ -4,11 +4,8 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import ProfileCard from "@/components/ProfileCard";
 import NavBar from "@/components/NavBar";
 import MainContent from "@/components/MainContent";
-import { PROJECT_IDS } from "@/components/Projects";
 
-const IDS = ["home", "skills", "experience"];
-
-const SECTION_IDS: string[] = [...IDS, ...PROJECT_IDS];
+const SECTION_IDS = ["home", "experience", "skills", "projects", "contact"];
 
 const PortfolioPage: React.FC = () => {
   const [activeSectionIndex, setActiveSectionIndex] = useState(0);
