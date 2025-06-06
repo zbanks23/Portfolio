@@ -2,14 +2,14 @@ import React from "react";
 
 const IrisFlowerClassification: React.FC = () => (
   <div
-    className="bg-cover bg-center"
+    className="bg-cover bg-center rounded-2xl"
     style={{
       backgroundImage: "url('/Purple-Iris-Flower-Growing-in-the-Garden.jpg')",
     }}
   >
     <a
       href="https://github.com/zbanks23/Iris_Flower_Classification"
-      className="hover:bg-black/40 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Iris Flower Classification
@@ -25,14 +25,14 @@ const IrisFlowerClassification: React.FC = () => (
 
 const GoogleStockAnalyis: React.FC = () => (
   <div
-    className="bg-cover bg-center"
+    className="bg-cover bg-center rounded-2xl"
     style={{
       backgroundImage: "url('/stock-price.jpg')",
     }}
   >
     <a
       href="https://github.com/zbanks23/Google-Stock-Analysis"
-      className="hover:bg-black/40 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Stock Price Analysis
@@ -47,14 +47,14 @@ const GoogleStockAnalyis: React.FC = () => (
 
 const Scheduleify: React.FC = () => (
   <div
-    className="bg-cover bg-center"
+    className="bg-cover bg-center rounded-2xl"
     style={{
       backgroundImage: "url('/Scheduleify.png')",
     }}
   >
     <a
       href="https://github.com/tjwz1/Scheduleify"
-      className="hover:bg-black/40 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Scheduleify
@@ -69,14 +69,14 @@ const Scheduleify: React.FC = () => (
 
 const MineSweeper: React.FC = () => (
   <div
-    className="bg-cover bg-center"
+    className="bg-cover bg-center rounded-2xl"
     style={{
       backgroundImage: "url('/minesweeper.jpg')",
     }}
   >
     <a
       href="https://github.com/zbanks23/Minesweeper"
-      className="hover:bg-black/40 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Minesweeper
@@ -91,14 +91,14 @@ const MineSweeper: React.FC = () => (
 
 const Sudoku: React.FC = () => (
   <div
-    className="bg-cover bg-center"
+    className="bg-cover bg-center rounded-2xl"
     style={{
       backgroundImage: "url('/Sudoku_Puzzle.png')",
     }}
   >
     <a
       href="https://github.com/zbanks23/Sudoku"
-      className="hover:bg-black/40 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">Sudoku</h3>
       <p className="text-white mt-auto text-center">
