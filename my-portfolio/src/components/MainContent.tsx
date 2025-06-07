@@ -80,7 +80,7 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
           onTabClick("experience");
         }}
       >
-        Experience
+        Prof/Dev
       </a>
     </div>
     <div
