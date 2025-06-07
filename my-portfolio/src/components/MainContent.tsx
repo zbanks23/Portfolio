@@ -151,13 +151,21 @@ const SkillsSection: React.FC<SectionProps> = ({ onTabClick }) => (
           "JavaScript",
           "TypeScript",
           "React",
-          "Next.js",
-          "Tailwind CSS",
+          "Next.JS",
+          "TailwindCSS",
           "HTML5",
           "CSS3",
           "Git",
           "Python",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "Seaborn",
+          "Scikit-Learn",
+          "Pygame",
+          "Flask",
           "C++",
+          "SFML",
         ].map((skill) => (
           <span
             key={skill}
