@@ -227,7 +227,7 @@ const MainContent: React.FC = () => {
         });
       else if (id == "skills")
         window.scrollTo({
-          top: 1976,
+          top: 1820,
           behavior: "smooth",
         });
       else if (id == "projects")
