@@ -25,7 +25,7 @@ const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
     </div>
     <div
       id="about"
-      className="bg-gray-900 w-full border-6 rounded-tr-2xl border-white h-[calc(100vh-80px)] sticky top-20"
+      className="bg-gray-900 w-full border-6 rounded-tr-2xl border-white h-screen sticky top-20"
     >
       <div className="p-4 sm:p-6 md:p-10">
         <div className="float-left mr-4 sm:mr-6 md:mr-10">
@@ -88,7 +88,7 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
     </div>
     <div
       id="experience"
-      className="bg-gray-900 border-6 rounded-t-2xl border-white h-[calc(100vh-80px)] sticky top-20"
+      className="bg-gray-900 border-6 rounded-t-2xl border-white h-screen sticky top-20"
     >
       <div className="border-l-2 border-blue-400 pl-6 space-y-10 relative m-4 sm:m-6 md:m-10">
         {/* Experience Item 1 */}
@@ -147,7 +147,7 @@ const SkillsSection: React.FC<SectionProps> = ({ onTabClick }) => (
     </div>
     <div
       id="skills"
-      className="bg-gray-900 border-6 rounded-t-2xl border-white h-[calc(100vh-80px)] p-4 sm:p-6 md:p-10 sticky top-20"
+      className="bg-gray-900 border-6 rounded-t-2xl border-white h-screen p-4 sm:p-6 md:p-10 sticky top-20"
     >
       <div className="flex flex-wrap gap-3 justify-center">
         {[
@@ -227,7 +227,7 @@ const MainContent: React.FC = () => {
         });
       else if (id == "skills")
         window.scrollTo({
-          top: 1985,
+          top: 1976,
           behavior: "smooth",
         });
       else if (id == "projects")
