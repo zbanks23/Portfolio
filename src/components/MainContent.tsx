@@ -46,17 +46,14 @@ const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
       </div>
 
       <div>
-        <h2 className="text-gray-300 mb-4 text-xl sm:text-2xl md:text-3xl font-semibold leading-loose">
+        <h2 className="text-gray-300 mb-4 text-xl sm:text-3xl md:text-4xl font-semibold leading-loose">
           Hi, I am an Innovator.
         </h2>
-        <p className="text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed">
+        <p className="text-gray-300 text-lg sm:text-2xl md:text-3xl leading-relaxed">
           I am an aspiring Software Engineer and Machine Learning Engineer. As a
-          rising 3rd-year Computer Science student at the University of Florida,
-          I thrive on creating good solutions and solving challenging real world
-          problems. My expertise spans multiple programming languages, NextJS,
-          and multiple python libraries, allowing me to build effective and
-          innovative solutions. Always eager to learn and grow, happy to connect
-          with you!
+          rising 3rd-year Computer Science student, I thrive on creating good
+          solutions and solving challenging real world problems. Always eager to
+          learn and grow, happy to connect with you!
         </p>
       </div>
     </div>
