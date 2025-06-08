@@ -12,7 +12,7 @@ interface SectionProps {
 const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
   <>
     {/* About Section */}
-    <div className="bg-gray-900 border-6 rounded-t-2xl border-b-0 border-white w-1/4 h-20 flex items-center justify-center text-2xl md:text-3xl lg:text-4xl font-semibold sticky top-0 z-1">
+    <div className="bg-gray-900 border-6 rounded-t-2xl border-b-0 border-white w-1/4 h-20 flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold sticky top-0 z-1">
       <a
         href="#about"
         onClick={(e) => {
@@ -72,15 +72,18 @@ const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
 const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
   <>
     {/* Experience Section */}
-    <div className="bg-gray-900 border-6 rounded-t-2xl border-b-0 border-white w-1/4 h-20 translate-x-full flex items-center justify-center text-2xl md:text-3xl lg:text-4xl font-semibold sticky top-0 bottom-0 z-1">
+    <div className="bg-gray-900 border-6 rounded-t-2xl border-b-0 border-white w-1/4 h-20 translate-x-full flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold sticky top-0 bottom-0 z-1">
       <a
+        className="leading-6.5"
         href="#experience"
         onClick={(e) => {
           e.preventDefault();
           onTabClick("experience");
         }}
       >
-        Prof/Dev
+        Prof
+        <br />
+        Dev
       </a>
     </div>
     <div
@@ -131,7 +134,7 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
 const SkillsSection: React.FC<SectionProps> = ({ onTabClick }) => (
   <>
     {/* Skills Section */}
-    <div className="bg-gray-900 border-6 rounded-t-2xl border-white border-b-0 w-1/4 h-20 translate-x-[200%] flex items-center justify-center text-2xl md:text-3xl lg:text-4xl font-semibold sticky top-0 bottom-0 z-1">
+    <div className="bg-gray-900 border-6 rounded-t-2xl border-white border-b-0 w-1/4 h-20 translate-x-[200%] flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold sticky top-0 bottom-0 z-1">
       <a
         href="#skills"
         onClick={(e) => {
@@ -181,7 +184,7 @@ const SkillsSection: React.FC<SectionProps> = ({ onTabClick }) => (
 
 const ProjectsSection: React.FC<SectionProps> = ({ onTabClick }) => (
   <>
-    <div className="bg-gray-900 border-6 rounded-t-2xl border-white border-b-0 w-1/4 h-20 flex items-center justify-center text-2xl md:text-3xl lg:text-4xl font-semibold ml-auto sticky top-0 bottom-0">
+    <div className="bg-gray-900 border-6 rounded-t-2xl border-white border-b-0 w-1/4 h-20 flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold ml-auto sticky top-0 bottom-0">
       <a
         href="#projects"
         onClick={(e) => {
@@ -236,7 +239,7 @@ const MainContent: React.FC = () => {
   };
 
   return (
-    <main className="w-3/4 md:w-2/3 m-auto">
+    <main className="sm:w-3/4 md:w-2/3 m-auto">
       <AboutSection onTabClick={scrollToSection} />
       <ExperienceSection onTabClick={scrollToSection} />
       <SkillsSection onTabClick={scrollToSection} />
