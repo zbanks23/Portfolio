@@ -232,7 +232,7 @@ const MainContent: React.FC = () => {
         });
       else if (id == "projects")
         window.scrollTo({
-          top: 3013,
+          top: 2728,
           behavior: "smooth",
         });
     }
