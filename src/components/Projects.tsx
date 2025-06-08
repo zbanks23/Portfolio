@@ -1,15 +1,17 @@
 import React from "react";
+import Image from "next/image";
 
 const IrisFlowerClassification: React.FC = () => (
-  <div
-    className="bg-cover bg-center rounded-2xl"
-    style={{
-      backgroundImage: "url('/Purple-Iris-Flower-Growing-in-the-Garden.jpg')",
-    }}
-  >
+  <div className="relative rounded-2xl overflow-hidden">
+    <Image
+      src="/Purple-Iris-Flower-Growing-in-the-Garden.jpg"
+      alt="Picture of Iris Flower"
+      fill
+      style={{ objectFit: "cover" }}
+    />
     <a
       href="https://github.com/zbanks23/Iris_Flower_Classification"
-      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Iris Flower Classification
@@ -24,15 +26,16 @@ const IrisFlowerClassification: React.FC = () => (
 );
 
 const GoogleStockAnalyis: React.FC = () => (
-  <div
-    className="bg-cover bg-center rounded-2xl"
-    style={{
-      backgroundImage: "url('/stock-price.jpg')",
-    }}
-  >
+  <div className="relative rounded-2xl overflow-hidden">
+    <Image
+      src="/stock-price.jpg"
+      alt="Stock Price Analysis"
+      fill
+      style={{ objectFit: "cover" }}
+    />
     <a
       href="https://github.com/zbanks23/Google-Stock-Analysis"
-      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Stock Price Analysis
@@ -46,15 +49,16 @@ const GoogleStockAnalyis: React.FC = () => (
 );
 
 const Scheduleify: React.FC = () => (
-  <div
-    className="bg-cover bg-center rounded-2xl"
-    style={{
-      backgroundImage: "url('/Scheduleify.png')",
-    }}
-  >
+  <div className="relative rounded-2xl overflow-hidden">
+    <Image
+      src="/Scheduleify.png"
+      alt="A reference picture of scheduleify"
+      fill
+      style={{ objectFit: "cover" }}
+    />
     <a
       href="https://github.com/tjwz1/Scheduleify"
-      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Scheduleify
@@ -68,15 +72,16 @@ const Scheduleify: React.FC = () => (
 );
 
 const MineSweeper: React.FC = () => (
-  <div
-    className="bg-cover bg-center rounded-2xl"
-    style={{
-      backgroundImage: "url('/minesweeper.jpg')",
-    }}
-  >
+  <div className="relative rounded-2xl overflow-hidden">
+    <Image
+      src="/minesweeper.jpg"
+      alt="Minesweeper game board"
+      fill
+      style={{ objectFit: "cover" }}
+    />
     <a
       href="https://github.com/zbanks23/Minesweeper"
-      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">
         Minesweeper
@@ -90,15 +95,16 @@ const MineSweeper: React.FC = () => (
 );
 
 const Sudoku: React.FC = () => (
-  <div
-    className="bg-cover bg-center rounded-2xl"
-    style={{
-      backgroundImage: "url('/Sudoku_Puzzle.png')",
-    }}
-  >
+  <div className="relative rounded-2xl overflow-hidden">
+    <Image
+      src="/Sudoku_Puzzle.png"
+      alt="Sudoku game board"
+      fill
+      style={{ objectFit: "cover" }}
+    />
     <a
       href="https://github.com/zbanks23/Sudoku"
-      className="hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+      className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">Sudoku</h3>
       <p className="text-white mt-auto text-center">
