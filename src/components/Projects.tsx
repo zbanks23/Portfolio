@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import IrisPic from "../../public/Purple-Iris-Flower-Growing-in-the-Garden.jpg";
+import StockPic from "../../public/stock-price.jpg";
+import ScheduleifyPic from "../../public/Scheduleify.png";
+import MinesweeperPic from "../../public/minesweeper.jpg";
+import SudokuPic from "../../public/Sudoku_Puzzle.png";
 
 const IrisFlowerClassification: React.FC = () => (
   <div className="relative rounded-2xl overflow-hidden">
     <Image
-      src="/Purple-Iris-Flower-Growing-in-the-Garden.jpg"
+      src={IrisPic}
       alt="Picture of Iris Flower"
       fill
       style={{ objectFit: "cover" }}
@@ -28,7 +33,7 @@ const IrisFlowerClassification: React.FC = () => (
 const GoogleStockAnalyis: React.FC = () => (
   <div className="relative rounded-2xl overflow-hidden">
     <Image
-      src="/stock-price.jpg"
+      src={StockPic}
       alt="Stock Price Analysis"
       fill
       style={{ objectFit: "cover" }}
@@ -51,7 +56,7 @@ const GoogleStockAnalyis: React.FC = () => (
 const Scheduleify: React.FC = () => (
   <div className="relative rounded-2xl overflow-hidden">
     <Image
-      src="/Scheduleify.png"
+      src={ScheduleifyPic}
       alt="A reference picture of scheduleify"
       fill
       style={{ objectFit: "cover" }}
@@ -74,7 +79,7 @@ const Scheduleify: React.FC = () => (
 const MineSweeper: React.FC = () => (
   <div className="relative rounded-2xl overflow-hidden">
     <Image
-      src="/minesweeper.jpg"
+      src={MinesweeperPic}
       alt="Minesweeper game board"
       fill
       style={{ objectFit: "cover" }}
@@ -97,7 +102,7 @@ const MineSweeper: React.FC = () => (
 const Sudoku: React.FC = () => (
   <div className="relative rounded-2xl overflow-hidden">
     <Image
-      src="/Sudoku_Puzzle.png"
+      src={SudokuPic}
       alt="Sudoku game board"
       fill
       style={{ objectFit: "cover" }}
