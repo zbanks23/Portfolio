@@ -25,45 +25,39 @@ const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
     </div>
     <div
       id="about"
-      className="bg-gray-900 w-full border-6 rounded-tr-2xl border-white h-screen sticky top-20"
+      className="bg-gray-900 w-full border-6 rounded-tr-2xl border-white h-screen sticky top-20 p-4 sm:p-6 md:p-10"
     >
-      <div className="p-4 sm:p-6 md:p-10">
-        <div className="float-left mr-4 sm:mr-6 md:mr-10">
-          <Image
-            src={ProfilePic}
-            alt="A picture of me"
-            width={200}
-            height={300}
-            className="rounded-4xl m-auto"
-          />
-          <div className="flex flex-col justify-center">
-            {/* Placeholder for an avatar */}
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white text-center">
-              Zhicheng Li
-            </h2>
-            <p className="text-gray-400 text-sm sm:text-base text-center">
-              Computer Science @ UF
-            </p>
-            <div className="mt-4 space-y-2 text-xs sm:text-sm text-gray-300 text-center">
-              <p>Location: Gainesville, Florida</p>
-              <p>Email: zli5@ufl.edu</p>
-            </div>
-          </div>
+      <div className="sm:float-left max-sm:m-auto sm:mr-6 md:mr-10 w-36 sm:w-44 md:w-52 h-78 sm:h-88 md:h-104">
+        <Image
+          src={ProfilePic}
+          alt="A picture of me"
+          className="rounded-4xl m-auto object-cover"
+        />
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white text-center">
+          Zhicheng Li
+        </h2>
+        <p className="text-gray-400 text-sm sm:text-base text-center">
+          Computer Science @ UF
+        </p>
+        <div className="sm:mt-4 space-y-2 text-xs sm:text-sm text-gray-300 text-center">
+          <p>Gainesville, Florida</p>
+          <p>zli5@ufl.edu</p>
         </div>
-        <div>
-          <h2 className="text-gray-300 mb-4 text-2xl sm:text-3xl md:text-4xl font-semibold leading-loose">
-            Hi, I am an Innovator.
-          </h2>
-          <p className="text-gray-300 text-xl sm:text-2xl md:text-3xl leading-relaxed">
-            I am an aspiring Software Engineer and Machine Learning Engineer. As
-            a rising 3rd-year Computer Science student at the University of
-            Florida, I thrive on creating good solutions and solving challenging
-            real world problems. My expertise spans multiple programming
-            languages, NextJS, and multiple python libraries, allowing me to
-            build effective and innovative solutions. Always eager to learn and
-            grow, happy to connect with you!
-          </p>
-        </div>
+      </div>
+
+      <div>
+        <h2 className="text-gray-300 mb-4 text-xl sm:text-2xl md:text-3xl font-semibold leading-loose">
+          Hi, I am an Innovator.
+        </h2>
+        <p className="text-gray-300 text-lg sm:text-xl md:text-2xl leading-relaxed">
+          I am an aspiring Software Engineer and Machine Learning Engineer. As a
+          rising 3rd-year Computer Science student at the University of Florida,
+          I thrive on creating good solutions and solving challenging real world
+          problems. My expertise spans multiple programming languages, NextJS,
+          and multiple python libraries, allowing me to build effective and
+          innovative solutions. Always eager to learn and grow, happy to connect
+          with you!
+        </p>
       </div>
     </div>
   </>
@@ -239,7 +233,7 @@ const MainContent: React.FC = () => {
   };
 
   return (
-    <main className="sm:w-3/4 md:w-2/3 m-auto">
+    <main className="max-w-6xl m-auto">
       <AboutSection onTabClick={scrollToSection} />
       <ExperienceSection onTabClick={scrollToSection} />
       <SkillsSection onTabClick={scrollToSection} />
