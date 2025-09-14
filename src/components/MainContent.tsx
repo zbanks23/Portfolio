@@ -97,7 +97,7 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
               GBM to improve member retention rate
             </li>
           </ul>
-          <h4>Member</h4>
+          <h4>Member | August 2023 - April 2025</h4>
           <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
             <li>
               Participated in data analytics and financial analytics workshops
@@ -116,10 +116,10 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
         {/* Experience Item 2 */}
         <div className="relative">
           <div className="absolute -left-[33px] top-1 w-4 h-4 bg-blue-400 rounded-full border-2 border-gray-900"></div>
-          <h3 className="text-xl font-medium text-white">SASE Interns</h3>
-          <p className="text-gray-400">
-            Society of Asian Scientist and Engineers | August 2024 - April 2025
-          </p>
+          <h3 className="text-xl font-medium text-white">
+            Society of Asian Scientist and Engineers
+          </h3>
+          <h4>SASE Interns | August 2024 - April 2025</h4>
           <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
             <li>
               Collaborated with board members to coordinate the Mentor Mentee
