@@ -1,10 +1,32 @@
 import React from "react";
 import Image from "next/image";
+import MyCFOPic from "../../public/MyCFO.png";
 import IrisPic from "../../public/Purple-Iris-Flower-Growing-in-the-Garden.jpg";
 import StockPic from "../../public/stock-price.jpg";
 import ScheduleifyPic from "../../public/Scheduleify.png";
 import MinesweeperPic from "../../public/minesweeper.jpg";
 import SudokuPic from "../../public/Sudoku_Puzzle.png";
+
+const MyCFO: React.FC = () => (
+  <div className="relative rounded-2xl overflow-hidden">
+    <Image
+      src={MyCFOPic}
+      alt="Picture of MyCFO"
+      fill
+      style={{ objectFit: "cover" }}
+    />
+    <a
+      href="https://github.com/zbanks23/MyCFO"
+      className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
+    >
+      <h3 className="text-xl text-center font-medium text-white">MyCFO</h3>
+      <p className="text-white mt-auto text-center">
+        My first fullstack web application that uses Nextjs, Flask, Supabase,
+        Clerk api, and Plaid Api.
+      </p>
+    </a>
+  </div>
+);
 
 const IrisFlowerClassification: React.FC = () => (
   <div className="relative rounded-2xl overflow-hidden">
@@ -46,7 +68,7 @@ const GoogleStockAnalyis: React.FC = () => (
         Stock Price Analysis
       </h3>
       <p className="text-white mt-auto text-center">
-        An exploratory data analysis mini project on Google (GOOGL) stock prices
+        A mini exploratory data analysis project on Google (GOOGL) stock prices
         using Jupyter Notebook
       </p>
     </a>
@@ -123,6 +145,7 @@ const Sudoku: React.FC = () => (
 const Projects: React.FC = () => {
   return (
     <>
+      <MyCFO />
       <IrisFlowerClassification />
       <GoogleStockAnalyis />
       <Scheduleify />

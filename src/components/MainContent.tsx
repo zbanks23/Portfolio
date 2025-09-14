@@ -51,9 +51,9 @@ const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
         </h2>
         <p className="text-gray-300 text-lg sm:text-2xl md:text-3xl leading-relaxed">
           I am an aspiring Software Engineer and Machine Learning Engineer. As a
-          rising 3rd-year Computer Science student, I thrive on creating good
-          solutions and solving challenging real world problems. Always eager to
-          learn and grow, happy to connect with you!
+          3rd-year Computer Science student, I thrive on creating good solutions
+          and solving challenging real world problems. Always eager to learn and
+          grow, happy to connect with you!
         </p>
       </div>
     </div>
@@ -85,14 +85,32 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
         {/* Experience Item 1 */}
         <div className="relative">
           <div className="absolute -left-[33px] top-1 w-4 h-4 bg-blue-400 rounded-full border-2 border-gray-900"></div>
-          <h3 className="text-xl font-medium text-white">
-            Director of Finance
-          </h3>
-          <p className="text-gray-400">GatorTech | April 2025 - Present</p>
+          <h3 className="text-xl font-medium text-white">GatorTech</h3>
+          <h4>Director of Finance | April 2025 - Present</h4>
           <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              Create budget requests in advance to Student Government to
+              allocate funds and provide food at each club event
+            </li>
+            <li>
+              Collaborate with other board members to plan and structure each
+              GBM to improve member retention rate
+            </li>
+          </ul>
+          <h4>Member</h4>
+          <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
+            <li>
+              Participated in data analytics and financial analytics workshops
+              using Python and PowerBI and Excel
+            </li>
+            <li>
+              Completed a case study with Fidelity Information Services
+              regarding whether to invest 3 million in AI development
+            </li>
+            <li>
+              Completed business analytics projects in python utilizing packages
+              such as NumPy, Pandas, Matplotlib, and Seaborn
+            </li>
           </ul>
         </div>
         {/* Experience Item 2 */}
@@ -109,11 +127,11 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
             </li>
             <li>
               Spearheaded the storyline development for the Mentor Mentee event
-              that resulted in overwhelming satisfaction
+              that resulted in over 90% satisfaction
             </li>
             <li>
               Organized a cultural event that raised awareness of Asian cultures
-              using fun culture specific mini-games
+              using culture games with over 50 participants
             </li>
           </ul>
         </div>
