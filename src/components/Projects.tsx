@@ -16,7 +16,7 @@ const MyCFO: React.FC = () => (
       style={{ objectFit: "cover" }}
     />
     <a
-      href="https://github.com/zbanks23/MyCFO"
+      href="https://mycfo-web.vercel.app"
       className="relative z-10 hover:bg-black/50 opacity-0 hover:opacity-100 h-full w-full flex flex-col"
     >
       <h3 className="text-xl text-center font-medium text-white">MyCFO</h3>

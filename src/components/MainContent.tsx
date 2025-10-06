@@ -89,6 +89,10 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
           <h4>Director of Finance | April 2025 - Present</h4>
           <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
             <li>
+              Manage a total amount of $1,025 base funding to be allocated to
+              the operations in every General Body Meeting
+            </li>
+            <li>
               Create budget requests in advance to Student Government to
               allocate funds and provide food at each club event
             </li>
@@ -100,16 +104,12 @@ const ExperienceSection: React.FC<SectionProps> = ({ onTabClick }) => (
           <h4>Member | August 2023 - April 2025</h4>
           <ul className="list-disc list-inside text-gray-300 mt-2 ml-2">
             <li>
-              Participated in data analytics and financial analytics workshops
-              using Python and PowerBI and Excel
-            </li>
-            <li>
               Completed a case study with Fidelity Information Services
               regarding whether to invest 3 million in AI development
             </li>
             <li>
-              Completed business analytics projects in python utilizing packages
-              such as NumPy, Pandas, Matplotlib, and Seaborn
+              Created business insights with chart visualizations in PowerBI
+              using the Amazon Sales Dataset from Kaggle
             </li>
           </ul>
         </div>
