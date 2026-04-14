@@ -1,14 +1,26 @@
 "use client";
 
 import React from "react";
-import MainContent from "@/components/MainContent";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 
-const PortfolioPage: React.FC = () => {
+export default function PortfolioPage() {
   return (
-    <div className="bg-gray-950 justify-center items-center md:gap-6 lg:gap-8 w-full">
-      <MainContent />
+    <div className="relative z-10">
+      <Navbar />
+      <HeroSection />
+      <div className="section-divider" />
+      <ExperienceSection />
+      <div className="section-divider" />
+      <SkillsSection />
+      <div className="section-divider" />
+      <ProjectsSection />
+      <div className="section-divider" />
+      <ContactSection />
     </div>
   );
-};
-
-export default PortfolioPage;
+}

@@ -3,7 +3,6 @@
 import React from "react";
 import Projects from "./Projects";
 import Image from "next/image";
-import ProfilePic from "../../public/ProfilePic.jpg";
 
 interface SectionProps {
   onTabClick: (id: string) => void;
@@ -29,7 +28,7 @@ const AboutSection: React.FC<SectionProps> = ({ onTabClick }) => (
     >
       <div className="sm:float-left max-sm:m-auto sm:mr-6 md:mr-10 w-36 sm:w-44 md:w-52 h-78 sm:h-88 md:h-104">
         <Image
-          src={ProfilePic}
+          src="/ProfilePic.jpg"
           alt="A picture of me"
           className="rounded-4xl m-auto object-cover"
         />

@@ -1,20 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Zhicheng_Li_Portfolio",
-  description: "A portfolio created by Zhicheng",
+  title: "Zhicheng Li — Software Engineer & ML Engineer",
+  description:
+    "Personal portfolio of Zhicheng Li, a Computer Science student at UF passionate about software engineering and machine learning.",
+  keywords: [
+    "Zhicheng Li",
+    "Software Engineer",
+    "Machine Learning",
+    "Portfolio",
+    "University of Florida",
+    "Computer Science",
+  ],
+  openGraph: {
+    title: "Zhicheng Li — Software Engineer & ML Engineer",
+    description:
+      "Personal portfolio of Zhicheng Li, a Computer Science student at UF.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +35,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} antialiased`}>
+        {/* Animated gradient background */}
+        <div className="gradient-bg" aria-hidden="true">
+          <div className="gradient-orb gradient-orb-1" />
+          <div className="gradient-orb gradient-orb-2" />
+          <div className="gradient-orb gradient-orb-3" />
+        </div>
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
