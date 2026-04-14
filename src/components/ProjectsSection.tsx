@@ -2,13 +2,20 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ExternalLink, Github, FolderOpen } from "lucide-react";
+
+import imgMySuite from "../../public/mysuite.png";
+import imgStockPrice from "../../public/stock-price.jpg";
+import imgMinesweeper from "../../public/minesweeper.jpg";
+import imgScheduleify from "../../public/Scheduleify.png";
+import imgIris from "../../public/Purple-Iris-Flower-Growing-in-the-Garden.jpg";
+import imgSudoku from "../../public/Sudoku_Puzzle.png";
 
 interface Project {
   title: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   tags: string[];
   href: string;
   github?: string;
@@ -20,7 +27,7 @@ const projects: Project[] = [
     title: "MySuite",
     description:
       "A scalable React Native monorepo (Turborepo) with Expo-SQLite and Apple HealthKit for workout tracking. Features 30+ test suites, offline persistence, and a premium NativeWind UI with haptic gestures.",
-    image: "/mysuite.png",
+    image: imgMySuite,
     tags: ["Turborepo", "Expo", "React Native", "Supabase", "Jest"],
     href: "https://github.com/zbanks23",
     github: "https://github.com/zbanks23",
@@ -30,7 +37,7 @@ const projects: Project[] = [
     title: "ARTichokeee",
     description:
       "A full-stack art discovery platform with Next.js/Supabase and a Flask API for JWT verification and secure media uploads. Server-side resolvers map user identities and serialize artwork data.",
-    image: "/stock-price.jpg",
+    image: imgStockPrice,
     tags: ["Next.js", "Flask", "Supabase", "JWT"],
     href: "https://github.com/zbanks23",
     github: "https://github.com/zbanks23",
@@ -39,7 +46,7 @@ const projects: Project[] = [
     title: "KitchenChaos",
     description:
       "A cooking game built in Unity 6 with modular C# systems using event-driven architecture for global state management. Features customer AI loops, dynamic scoring, and interactive serving logic.",
-    image: "/minesweeper.jpg",
+    image: imgMinesweeper,
     tags: ["Unity 6", "C#", "Git LFS", "Game Dev"],
     href: "https://github.com/zbanks23",
     github: "https://github.com/zbanks23",
@@ -48,7 +55,7 @@ const projects: Project[] = [
     title: "DecoGator",
     description:
       "An interior design simulator created during a Design-A-Thon. Progressed from low-fi wireframes to high-fi mockups and a fully interactive Figma prototype within a 24-hour sprint.",
-    image: "/Scheduleify.png",
+    image: imgScheduleify,
     tags: ["Figma", "UI/UX", "Prototyping"],
     href: "https://github.com/zbanks23",
   },
@@ -56,7 +63,7 @@ const projects: Project[] = [
     title: "Schedulify",
     description:
       "A course scheduling engine integrating the UF public API to automate conflict-free timetable generation. Benchmarked Greedy vs Backtracking algorithms for optimal schedule generation speed.",
-    image: "/Scheduleify.png",
+    image: imgScheduleify,
     tags: ["Flask", "JavaScript", "Algorithms"],
     href: "https://github.com/tjwz1/Scheduleify",
     github: "https://github.com/tjwz1/Scheduleify",
@@ -65,7 +72,7 @@ const projects: Project[] = [
     title: "Iris Flower Classification",
     description:
       "Predicted Iris flower species with 100% accuracy using KNN, Linear Regression, and SVM. Visualized petal length/width relationships with Pandas, Matplotlib, and Seaborn.",
-    image: "/Purple-Iris-Flower-Growing-in-the-Garden.jpg",
+    image: imgIris,
     tags: ["Python", "Scikit-Learn", "Machine Learning"],
     href: "https://github.com/zbanks23/Iris_Flower_Classification",
     github: "https://github.com/zbanks23/Iris_Flower_Classification",
@@ -74,7 +81,7 @@ const projects: Project[] = [
     title: "Google Stock Analysis",
     description:
       "Exploratory data analysis on Google (GOOGL) stock prices — compared daily volume with price changes using Pandas, Matplotlib, and Seaborn on Kaggle data.",
-    image: "/stock-price.jpg",
+    image: imgStockPrice,
     tags: ["Python", "Pandas", "Data Analysis"],
     href: "https://github.com/zbanks23/Google-Stock-Analysis",
     github: "https://github.com/zbanks23/Google-Stock-Analysis",
@@ -83,7 +90,7 @@ const projects: Project[] = [
     title: "Minesweeper",
     description:
       "A modern Minesweeper with C++ and SFML. Features a timer function tracking game duration and a leaderboard system ranking the top 5 fastest times.",
-    image: "/minesweeper.jpg",
+    image: imgMinesweeper,
     tags: ["C++", "SFML", "Game Dev"],
     href: "https://github.com/zbanks23/Minesweeper",
     github: "https://github.com/zbanks23/Minesweeper",
@@ -92,7 +99,7 @@ const projects: Project[] = [
     title: "Sudoku",
     description:
       "A classic Sudoku game recreated with Pygame in a team of 4. Utilized Git for collaborative development and implemented visuals using the Pygame library.",
-    image: "/Sudoku_Puzzle.png",
+    image: imgSudoku,
     tags: ["Python", "Pygame", "Git"],
     href: "https://github.com/zbanks23/Sudoku",
     github: "https://github.com/zbanks23/Sudoku",

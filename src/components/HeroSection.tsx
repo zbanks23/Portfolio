@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Award,
 } from "lucide-react";
+import profilePic from "../../public/ProfilePic.jpg";
 
 const HeroSection: React.FC = () => {
   return (
@@ -154,7 +155,7 @@ const HeroSection: React.FC = () => {
               <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-[var(--gradient-start)] via-[var(--gradient-mid)] to-[var(--gradient-end)] opacity-20 blur-xl" />
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-white/10">
                 <Image
-                  src="/ProfilePic.jpg"
+                  src={profilePic}
                   alt="Zhicheng Li"
                   fill
                   className="object-cover"
