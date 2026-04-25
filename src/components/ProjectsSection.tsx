@@ -11,6 +11,10 @@ import imgMinesweeper from "../../public/minesweeper.jpg";
 import imgScheduleify from "../../public/Scheduleify.png";
 import imgIris from "../../public/Purple-Iris-Flower-Growing-in-the-Garden.jpg";
 import imgSudoku from "../../public/Sudoku_Puzzle.png";
+import imgArtichokeee from "../../public/artichokeee.png";
+import imgDecoGator from "../../public/decogator.png";
+import imgKitchenChaos from "../../public/kitchen_chaos.png";
+import imgEduScroll from "../../public/eduscroll.png";
 
 interface Project {
   title: string;
@@ -28,36 +32,45 @@ const projects: Project[] = [
     description:
       "A scalable React Native monorepo (Turborepo) with Expo-SQLite and Apple HealthKit for workout tracking. Features 30+ test suites, offline persistence, and a premium NativeWind UI with haptic gestures.",
     image: imgMySuite,
-    tags: ["Turborepo", "Expo", "React Native", "Supabase", "Jest"],
-    href: "https://github.com/zbanks23",
-    github: "https://github.com/zbanks23",
+    tags: ["Turborepo", "Expo", "React Native", "SQLite", "Jest"],
+    href: "https://github.com/MySuite",
+    github: "https://github.com/MySuite",
     featured: true,
+  },
+  {
+    title: "EduScroll",
+    description:
+      "A hackathon project that converts study materials into short-form video scripts using the Gemini API and ElevenLabs for text-to-speech.",
+    image: imgEduScroll,
+    tags: ["Expo", "Gemini API", "ElevenLabs"],
+    href: "https://github.com/zbanks23/SASEHACKS2026",
+    github: "https://github.com/zbanks23/SASEHACKS2026",
   },
   {
     title: "ARTichokeee",
     description:
       "A full-stack art discovery platform with Next.js/Supabase and a Flask API for JWT verification and secure media uploads. Server-side resolvers map user identities and serialize artwork data.",
-    image: imgStockPrice,
+    image: imgArtichokeee,
     tags: ["Next.js", "Flask", "Supabase", "JWT"],
-    href: "https://github.com/zbanks23",
-    github: "https://github.com/zbanks23",
+    href: "https://github.com/divyaverma4/swe",
+    github: "https://github.com/divyaverma4/swe",
   },
   {
     title: "KitchenChaos",
     description:
       "A cooking game built in Unity 6 with modular C# systems using event-driven architecture for global state management. Features customer AI loops, dynamic scoring, and interactive serving logic.",
-    image: imgMinesweeper,
+    image: imgKitchenChaos,
     tags: ["Unity 6", "C#", "Git LFS", "Game Dev"],
-    href: "https://github.com/zbanks23",
-    github: "https://github.com/zbanks23",
+    href: "https://github.com/zbanks23/KitchenChaosVR",
+    github: "https://github.com/zbanks23/KitchenChaosVR",
   },
   {
     title: "DecoGator",
     description:
       "An interior design simulator created during a Design-A-Thon. Progressed from low-fi wireframes to high-fi mockups and a fully interactive Figma prototype within a 24-hour sprint.",
-    image: imgScheduleify,
+    image: imgDecoGator,
     tags: ["Figma", "UI/UX", "Prototyping"],
-    href: "https://github.com/zbanks23",
+    href: "https://devpost.com/software/decogator",
   },
   {
     title: "Schedulify",

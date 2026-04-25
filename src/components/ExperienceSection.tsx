@@ -34,15 +34,6 @@ const experiences: ExperienceItem[] = [
     location: "Gainesville, FL",
     roles: [
       {
-        title: "EduScroll — SASEHACKS2026",
-        dates: "March 2026",
-        bullets: [
-          'Onboarded a team of 3 on Google Antigravity\'s environment; served as the "Human-in-the-Loop" by auditing agent-generated code diffs and task lists to ensure project stability under a 24-hour deadline',
-          "Architected a content engine using the Gemini API for automated scriptwriting and ElevenLabs for text-to-speech, converting study materials into short-form video scripts",
-          'Directed the team\'s product roadmap, prioritizing the "high-retention" video feed and script generation performance to deliver a functional, buffer-free MVP for the hackathon showcase',
-        ],
-      },
-      {
         title: "SASE Intern",
         dates: "August 2024 — April 2025",
         bullets: [
@@ -97,7 +88,7 @@ const ExperienceSection: React.FC = () => {
           {/* Timeline line (desktop only) */}
           <div className="hidden md:block timeline-line" style={{ top: 0 }} />
 
-          <div className="space-y-12">
+          <div className="space-y-16">
             {experiences.map((exp, idx) => (
               <motion.div
                 key={exp.company}
@@ -106,42 +97,42 @@ const ExperienceSection: React.FC = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-80px" }}
-                className="flex gap-6"
+                className="flex gap-6 sm:gap-10"
               >
                 {/* Dot (desktop) */}
-                <div className="hidden md:flex flex-col items-center">
+                <div className="hidden md:flex flex-col items-center mt-2">
                   <div className="timeline-dot" />
                 </div>
 
                 {/* Card */}
-                <div className="glass-card p-6 sm:p-8 flex-1">
-                  <div className="flex flex-wrap items-baseline gap-3 mb-4">
-                    <h3 className="text-xl font-semibold text-white">
+                <div className="glass-card px-8 py-10 sm:px-12 sm:py-12 flex-1">
+                  <div className="flex flex-wrap items-baseline gap-4 mb-8">
+                    <h3 className="text-2xl font-bold tracking-tight text-white">
                       {exp.company}
                     </h3>
-                    <span className="text-xs text-[var(--muted-foreground)]">
-                      {exp.location}
+                    <span className="text-sm text-[var(--muted-foreground)] font-medium">
+                       {exp.location}
                     </span>
                   </div>
-                  <div className="space-y-6">
+                  <div className="space-y-10">
                     {exp.roles.map((role) => (
                       <div key={role.title}>
-                        <div className="flex flex-wrap items-center gap-3 mb-2">
-                          <span className="font-medium text-[var(--foreground)]">
+                        <div className="flex flex-wrap items-center justify-between gap-4 mb-5">
+                          <span className="text-lg font-medium text-[var(--foreground)]">
                             {role.title}
                           </span>
-                          <span className="flex items-center gap-1 text-xs text-[var(--muted-foreground)]">
-                            <Calendar size={12} />
+                          <span className="flex items-center gap-2 text-sm text-[var(--muted-foreground)]">
+                            <Calendar size={14} />
                             {role.dates}
                           </span>
                         </div>
-                        <ul className="space-y-2">
+                        <ul className="space-y-5">
                           {role.bullets.map((bullet, bIdx) => (
                             <li
                               key={bIdx}
-                              className="flex gap-3 text-sm text-[var(--muted-foreground)] leading-relaxed"
+                              className="flex gap-4 text-base text-[var(--muted-foreground)] leading-loose max-w-4xl"
                             >
-                              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[var(--gradient-start)] flex-shrink-0" />
+                              <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-[var(--gradient-start)] flex-shrink-0" />
                               {bullet}
                             </li>
                           ))}

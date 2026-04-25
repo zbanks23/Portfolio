@@ -19,7 +19,7 @@ const skillCategories: SkillCategory[] = [
   {
     label: "Frameworks",
     color: "#a78bfa",
-    skills: ["Next.js", "React / React Native", "Expo", "Flask", "TailwindCSS / NativeWind", "Unity 6"],
+    skills: ["Next.js", "React / React Native", "Expo", "Flask", "TailwindCSS / NativeWind"],
   },
   {
     label: "Data & ML",
@@ -29,7 +29,7 @@ const skillCategories: SkillCategory[] = [
   {
     label: "Developer Tools",
     color: "#f472b6",
-    skills: ["Git", "VS Code", "Jupyter Notebook", "Figma", "Turborepo", "Supabase", "PyCharm", "CLion"],
+    skills: ["Git", "VS Code", "Jupyter Notebook", "Figma", "Turborepo", "Supabase", "PyCharm", "CLion", "Unity 6"],
   },
 ];
 

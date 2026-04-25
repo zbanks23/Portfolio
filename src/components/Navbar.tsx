@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             </button>
           ))}
           <a
-            href="/Zli_Resume_Bank.pdf"
+            href={`${process.env.NODE_ENV === "production" ? "/Portfolio" : ""}/Zli_Resume_Bank.pdf?v=2`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline text-xs py-2 px-4"
@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
                 </button>
               ))}
               <a
-                href="/Zli_Resume_Bank.pdf"
+                href={`${process.env.NODE_ENV === "production" ? "/Portfolio" : ""}/Zli_Resume_Bank.pdf?v=2`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline text-sm py-2 px-4 text-center"
